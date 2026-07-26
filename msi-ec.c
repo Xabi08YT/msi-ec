@@ -57,7 +57,7 @@ static DEFINE_MUTEX(ec_set_bit_mutex);
 //Used to ban specific firmware versions in case they are buggy.
 static const char *BANNED_FW[] __initconst = {
 	NULL
-}
+};
 
 
 /* **************** Gen 1 - WMI1 **************** */
@@ -2827,7 +2827,7 @@ static int __init load_configuration(void)
 	if (!banned)
 		pr_err("Your firmware version is not supported!\n");
 	else
-		pr_err("Your firmware version is blacklisted !\n")
+		pr_err("Your firmware version is blacklisted !\n");
 	return -EOPNOTSUPP;
 }
 
